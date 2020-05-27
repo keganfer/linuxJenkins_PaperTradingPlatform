@@ -9,7 +9,7 @@
         }
         stage('Test') {
             steps {
-                echo "testing .."
+                bat "mvn clean test"
             }
         }
         stage('Deploy') {
