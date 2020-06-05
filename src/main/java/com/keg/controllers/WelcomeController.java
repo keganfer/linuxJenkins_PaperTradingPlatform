@@ -1,12 +1,11 @@
-package com.fdm.controllers;
+package com.keg.controllers;
 
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
-import com.fdm.model.User;
+import com.keg.model.User;
 
 @Controller
 public class WelcomeController {

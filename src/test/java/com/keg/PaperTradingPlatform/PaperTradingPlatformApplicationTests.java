@@ -1,4 +1,4 @@
-package com.fdm.PaperTradingPlatform;
+package com.keg.PaperTradingPlatform;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

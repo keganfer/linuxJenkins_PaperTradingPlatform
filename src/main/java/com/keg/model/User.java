@@ -1,4 +1,4 @@
-package com.fdm.model;
+package com.keg.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;

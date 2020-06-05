@@ -1,4 +1,4 @@
-package com.fdm.controllers;
+package com.keg.controllers;
 
 import java.io.IOException;
 
@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.fdm.dal.StockInfoRepository;
-import com.fdm.dal.TradesRepository;
-import com.fdm.model.StockInfo;
-import com.fdm.model.Trades;
-import com.fdm.model.User;
-import com.fdm.service.StockService;
-import com.fdm.service.TradeService;
+import com.keg.dal.StockInfoRepository;
+import com.keg.dal.TradesRepository;
+import com.keg.model.StockInfo;
+import com.keg.model.Trades;
+import com.keg.model.User;
+import com.keg.service.StockService;
+import com.keg.service.TradeService;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;

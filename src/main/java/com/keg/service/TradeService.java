@@ -1,4 +1,4 @@
-package com.fdm.service;
+package com.keg.service;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -11,12 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
-import com.fdm.dal.StockInfoRepository;
-import com.fdm.dal.TradesRepository;
-import com.fdm.dal.UserRepository;
-import com.fdm.model.StockInfo;
-import com.fdm.model.Trades;
-import com.fdm.model.User;
+import com.keg.dal.StockInfoRepository;
+import com.keg.dal.TradesRepository;
+import com.keg.dal.UserRepository;
+import com.keg.model.StockInfo;
+import com.keg.model.Trades;
+import com.keg.model.User;
 
 @Service
 public class TradeService {

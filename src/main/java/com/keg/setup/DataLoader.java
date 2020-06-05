@@ -1,5 +1,5 @@
 
-package com.fdm.setup;
+package com.keg.setup;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,10 +12,10 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import com.fdm.dal.StockInfoRepository;
-import com.fdm.dal.UserRepository;
-import com.fdm.model.StockInfo;
-import com.fdm.model.User;
+import com.keg.dal.StockInfoRepository;
+import com.keg.dal.UserRepository;
+import com.keg.model.StockInfo;
+import com.keg.model.User;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;

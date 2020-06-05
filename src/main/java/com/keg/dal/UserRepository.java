@@ -1,4 +1,4 @@
-package com.fdm.dal;
+package com.keg.dal;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.fdm.model.User;
+import com.keg.model.User;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Integer> {

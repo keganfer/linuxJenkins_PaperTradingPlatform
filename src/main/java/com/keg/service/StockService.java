@@ -1,4 +1,4 @@
-package com.fdm.service;
+package com.keg.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,8 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fdm.dal.StockInfoRepository;
-
-import com.fdm.model.StockInfo;
+import com.keg.dal.StockInfoRepository;
+import com.keg.model.StockInfo;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;

@@ -1,4 +1,4 @@
-package com.fdm.controllers;
+package com.keg.controllers;
 
 import javax.servlet.http.HttpSession;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.fdm.dal.UserRepository;
-import com.fdm.model.User;
-import com.fdm.service.StockService;
+import com.keg.dal.UserRepository;
+import com.keg.model.User;
+import com.keg.service.StockService;
 
 @Controller
 public class LoginController {

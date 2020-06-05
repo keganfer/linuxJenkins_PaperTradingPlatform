@@ -1,4 +1,4 @@
-package com.fdm.controllers;
+package com.keg.controllers;
 
 import javax.servlet.http.HttpSession;
 
@@ -6,9 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
-import com.fdm.model.Trades;
-import com.fdm.model.User;
-import com.fdm.service.TradeService;
+import com.keg.model.Trades;
+import com.keg.model.User;
+import com.keg.service.TradeService;
 
 @Controller
 public class DashboardController {

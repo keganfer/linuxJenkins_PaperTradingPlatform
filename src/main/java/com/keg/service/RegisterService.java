@@ -1,10 +1,10 @@
-package com.fdm.service;
+package com.keg.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fdm.dal.UserRepository;
-import com.fdm.model.User;
+import com.keg.dal.UserRepository;
+import com.keg.model.User;
 
 @Service
 public class RegisterService {

@@ -1,4 +1,4 @@
-package com.fdm.controllers;
+package com.keg.controllers;
 
 
 
@@ -13,11 +13,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.fdm.dal.StockInfoRepository;
-
-import com.fdm.model.User;
-import com.fdm.service.RegisterService;
-import com.fdm.service.StockService;
+import com.keg.dal.StockInfoRepository;
+import com.keg.model.User;
+import com.keg.service.RegisterService;
+import com.keg.service.StockService;
 
 
 
