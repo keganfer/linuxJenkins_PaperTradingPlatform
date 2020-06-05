@@ -15,7 +15,7 @@
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-             withCredentials([string(credentialsId: 'ec2-linuxAMI')]) {
+              sshagent(credentials: ['ec2-linuxAMI']) {
               sh 'ls'
               
              }
