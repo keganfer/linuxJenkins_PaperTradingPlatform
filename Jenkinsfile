@@ -15,6 +15,7 @@
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                echo 'to commit to test push'
               sshagent(credentials: ['ec2-linuxAMI']) {
               sh 'ls'
               
