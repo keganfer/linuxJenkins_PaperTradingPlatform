@@ -12,6 +12,16 @@
                 sh 'mvn clean test'
             }
         }
+       stage('Dock push') {
+            steps {
+                sh 'docker build -t linux_papertradingplatform .'
+			            	sh 'docker tag linux_papertradingplatform:latest keganferreira/linux_papertradingplatform:latest'
+				            withDockerRegistry([ credentialsId: 'DockerCreds', url: '' ]) {
+			            	bat 'docker push keganferreira/linux_papertradingplatform'
+				          }
+
+            }
+        }
         stage('Deploy') {
             steps {
               echo 'Deploying....'
