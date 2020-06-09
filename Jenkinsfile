@@ -17,7 +17,7 @@
                 sh 'docker build -t linux_papertradingplatform .'
 			            	sh 'docker tag linux_papertradingplatform:latest keganferreira/linux_papertradingplatform:latest'
 				            withDockerRegistry([ credentialsId: 'DockerCreds', url: '' ]) {
-			            	bat 'docker push keganferreira/linux_papertradingplatform'
+			            	sh 'docker push keganferreira/linux_papertradingplatform'
 				          }
 
             }
