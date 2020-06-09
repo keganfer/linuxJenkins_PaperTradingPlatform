@@ -17,7 +17,7 @@ import org.hibernate.annotations.OnDeleteAction;
 public class Trades {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private double volume;
 	

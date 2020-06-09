@@ -26,7 +26,7 @@ public class StockInfo {
 	
 	//@Column(name ="STOCK_ID")
 	 @Id 
-	 @GeneratedValue(strategy = GenerationType.TABLE)
+	 @GeneratedValue(strategy = GenerationType.AUTO)
 	 private int id;
 	 private String symbol;
 	 private String name;
