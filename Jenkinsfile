@@ -28,7 +28,7 @@
               sshagent(credentials: ['ec2-linuxAMI']) {
               sh 'ls'
 	      sh 'docker pull keganferreira/linux_papertradingplatform'
-	      sh 'docker run keganferreira/linux_papertradingplatform'	      
+	      	      
               
              }
             }
