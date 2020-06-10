@@ -27,8 +27,7 @@
               echo 'Deploying....'
               sshagent(credentials: ['ec2-linuxAMI-v2']) {
               sh 'ls'
-	      sh 'cd ..'
-	      sh 'ls'      
+	      sh 'touch test.txt'      
 	      sh 'docker pull keganferreira/linux_papertradingplatform'
 	      sh 'docker run -p 8083:8083 -d keganferreira/linux_papertradingplatform'
 	      	      
