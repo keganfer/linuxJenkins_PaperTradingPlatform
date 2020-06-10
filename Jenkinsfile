@@ -28,7 +28,7 @@
               sshagent(credentials: ['ec2-linuxAMI-v3']) {
               sh 'ls'
 	      sh 'docker pull keganferreira/linux_papertradingplatform'
-		  sh 'if [ "$(docker ps --filter ancestor="keganferreira/linux_papertradingplatform")" ]; then docker stop $(docker ps --filter ancestor="keganferreira/linux_papertradingplatform" | cut -d' ' -f1 | tail -1);docker rm $(docker ps --filter ancestor="keganferreira/linux_papertradingplatform" | cut -d' ' -f1 | tail -1)'    
+		  sh 'if [ "$(docker ps --filter ancestor="keganferreira/linux_papertradingplatform")" ];'    
 		  sh 'fi'        
 	      sh 'docker run -p 8083:8083 -d keganferreira/linux_papertradingplatform'
 	      	      
