@@ -15,9 +15,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = {"com.keg.dal"})
 public class PaperTradingPlatformApplication extends SpringBootServletInitializer  {
 
-	
-	
-	
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(PaperTradingPlatformApplication.class);
