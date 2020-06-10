@@ -25,7 +25,7 @@
         stage('Deploy') {
             steps {
               echo 'Deploying....'
-              sshagent(credentials: ['ec2-linuxAMI-v2']) {
+              sshagent(credentials: ['ec2-linuxAMI-v3']) {
               sh 'ls'
 	          
 	      sh 'docker pull keganferreira/linux_papertradingplatform'
