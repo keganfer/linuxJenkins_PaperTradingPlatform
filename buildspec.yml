@@ -10,4 +10,5 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+      - echo $(KEGANENV)
 
