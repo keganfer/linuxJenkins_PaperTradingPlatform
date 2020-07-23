@@ -5,6 +5,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - apt-get update
+      - sudo apt-get install docker
       - mvn test
   post_build:
     commands:
