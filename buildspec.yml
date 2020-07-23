@@ -11,4 +11,5 @@ phases:
       - echo Build completed on `date`
       - mvn package
       - echo ${KEGANENV}
+      - docker push keganferreira/demo-aws
 
