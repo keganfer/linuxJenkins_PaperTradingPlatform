@@ -2,6 +2,9 @@
 version: 0.1
 
 phases:
+  pre_build:
+    commands:
+      - aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 988965997364.dkr.ecr.ap-southeast-2.amazonaws.com
   build:
     commands:
       - echo Build started on `date`
@@ -13,7 +16,7 @@ phases:
       - echo Build completed on `date`
       - mvn package
       - echo ${KEGANENV}
-      - docker build -t demo-aws .
-      - docker tag demo-aws:latest keganferreira/demo-aws:latest
-      - docker push keganferreira/demo-aws
+      - docker build -t kegf .
+      - docker tag kegf:latest 988965997364.dkr.ecr.ap-southeast-2.amazonaws.com/kegf:latest
+      - docker push 988965997364.dkr.ecr.ap-southeast-2.amazonaws.com/kegf:latest
 
