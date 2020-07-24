@@ -2,9 +2,6 @@
 version: 0.1
 
 phases:
-  pre_build:
-    commands:
-      - $(aws ecr get-login-password --region ap-southeast-2)
   build:
     commands:
       - echo Build started on `date`
